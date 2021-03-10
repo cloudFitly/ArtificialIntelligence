@@ -42,27 +42,27 @@ class SearchNode:
 
 def breadth_first_search(problem):
     from brfs_search import solve
-    start = time.clock()
+    start = time.process_time()
     rv = solve(problem)
-    end = time.clock()
+    end = time.process_time()
     print("Search time", end - start, "seconds")
     return rv
 
 
 def ids_search(problem):
     from ids_search import solve
-    start = time.clock()
+    start = time.process_time()
     rv = solve(problem)
-    end = time.clock()
+    end = time.process_time()
     print("Search time", end - start, "seconds")
     return rv
 
 
 def a_star_search(problem, heuristic=null_heuristic):
     from a_star_search import solve
-    start = time.clock()
+    start = time.process_time()
     rv = solve(problem, heuristic)
-    end = time.clock()
+    end = time.process_time()
     print("Search time", end - start, "seconds")
     return rv
 
